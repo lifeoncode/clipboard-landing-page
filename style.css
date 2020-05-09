@@ -1,0 +1,473 @@
+@import url('https://fonts.google.com/specimen/Bai+Jamjuree');
+
+*, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --primary-cyan: hsl(171, 66%, 33%);
+    --primary-blue: hsl(233, 11%, 66%);
+    --neutral-darkblue: hsl(210, 10%, 33%);
+    --neutral-blue: hsl(201, 10%, 66%);
+}
+
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+
+body{
+    background-color: #fff;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+
+
+header{
+    position: relative;
+    text-align: center;
+}
+
+header::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0.5;
+}
+
+.header_top,
+.header_content{
+    position: relative;
+    z-index: 2;
+}
+
+
+.header_top{
+    background: url(./images/bg-header-desktop.png)no-repeat center/cover;
+    padding: 4rem 0;
+}
+
+.header_content,
+.main_center{
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.header_content h1{
+    font-size: 3rem;
+    color: var(--neutral-darkblue);
+}
+
+
+
+
+.computer_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow: hidden;
+}
+
+.computer_grid img{
+    position: relative;
+    left: -100px;
+}
+
+.computer_grid .content{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content li{
+    margin: 4rem 0;
+}
+
+.content h3{
+    font-size: 1.3rem;
+    color: var(--neutral-darkblue);
+    margin-bottom: 1rem;
+}
+
+.content p{
+    font-size: 1rem;
+    color: var(--neutral-blue);
+}
+
+
+
+
+.main_center h2{
+    font-size: 1.6rem;
+    color: var(--neutral-darkblue);
+}
+
+.header_content p,
+.main_center p{
+    font-size: 1.1rem;
+    color: var(--neutral-blue);
+    line-height: 1.4;
+    margin: 1rem 0 3rem 0;
+}
+
+.header_content a,
+.main_center a{
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+.header_content a:hover,
+.main_center a:hover{
+    transform: scale(1.1);
+}
+
+.header_content .ios,
+.main_center .ios{
+    background-color: var(--primary-cyan);
+}
+
+.header_content .mac,
+.main_center .mac{
+    background-color: blue;
+}
+
+.center_grid,
+.logo_grid{
+    width: 80%;
+    margin: auto;
+}
+
+
+.center_grid{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4rem 0;
+}
+
+.center_grid > div{
+    padding: 0 1rem;
+}
+
+.center_grid > div img{
+    padding: 2rem;
+}
+
+.center_grid > div h3{
+    color: var(--neutral-darkblue);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.center_grid > div p{
+    line-height: 1.4;
+    font-size: 1rem;
+    color: var(--primary-blue);
+}
+
+.logo_grid{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 4rem 0;
+}
+
+
+footer{
+    background-color: #eee;
+    padding: 4rem 0;
+}
+
+.footer_inner{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.footer_inner > div + div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_inner img{
+    width: 20%;
+}
+
+.footer_inner li{
+    font-size: 0.9rem;
+    color: var(--neutral-blue);
+    transition: all 0.3s ease;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+.footer_inner li:hover{
+    color: #000;
+}
+
+.social{
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.social li{
+    display: inline;
+    padding: 0 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 1024px){
+    
+    img{
+        width: 100%;
+    }
+
+    .header_top img{
+        width: 20%;
+    }
+
+    .computer_grid img{
+        position: relative;
+        left: auto;
+    }
+
+    .computer_grid .content{
+        width: auto;
+        padding: 0 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content li{
+        margin: 2rem 0;
+    }
+
+    .content h3{
+        font-size: 1.3rem;
+        color: var(--neutral-darkblue);
+        margin-bottom: 1rem;
+    }
+
+    .content p{
+        font-size: 1rem;
+        color: var(--neutral-blue);
+    }
+
+    .center_grid,
+    .logo_grid{
+        width: 90%;
+    }
+
+    .center_grid > div img{
+        display: none;
+    }
+
+    .logo_grid > div{
+        width: 70%;
+        margin: auto;
+    }
+
+    .social img{
+        width: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+
+    .content h3{
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .content li{
+        margin: 1rem 0;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 430px){
+    
+    .header_top{
+        background: url(./images/bg-header-mobile.png)no-repeat center/cover;
+    }
+    
+    .header_content,
+    .main_center{
+        padding: 2rem 1rem;
+    }
+    
+    .header_content h1{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .header_content p{
+        display: none;
+    }
+    
+    .computer_grid{
+        display: grid;
+        grid-template-columns: none;
+        overflow: hidden;
+        width: 90%;
+        margin: auto;
+    }
+    
+    
+    .computer_grid .content{
+        width: auto;
+        display: block;
+    }
+    
+    .content li{
+        margin: 2rem 0;
+    }
+    
+    .content h3{
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    .content p{
+        font-size: 0.9rem;
+    }
+    
+    
+    
+    
+    .main_center h2{
+        font-size: 1.4rem;
+    }
+    
+    .header_content p,
+    .main_center p{
+        font-size: 0.9rem;
+    }
+    
+    .header_content a,
+    .main_center a{
+        margin-bottom: 1rem;
+    }
+    
+    .center_grid,
+    .logo_grid{
+        width: 90%;
+        margin: auto;
+    }
+    
+    
+    .center_grid{
+        text-align: center;
+        display: grid;
+        grid-template-columns: none;
+        padding: 3rem 0;
+    }
+    
+    .center_grid > div{
+        padding: 2rem 1rem;
+    }
+    
+    .center_grid > div h3{
+        font-size: 1.2rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    footer{
+        padding: 2rem 0;
+    }
+    
+    .footer_inner{
+        grid-template-columns: none;
+    }
+    
+    .footer_inner > div + div{
+        display: block;
+    }
+    
+    .footer_inner img{
+        width: 15%;
+    }
+    
+    .footer_inner li{
+        font-size: 0.8rem;
+        margin: 0.5rem;
+    }
+    
+    
+    .social li{
+        padding: 0 1rem;
+    }
+        
+}
