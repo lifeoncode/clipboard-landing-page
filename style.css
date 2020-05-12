@@ -251,7 +251,7 @@ footer{
 
 
 
-@media(max-width: 1024px){
+@media screen and(max-width: 1024px){
     
     img{
         width: 100%;
@@ -322,7 +322,7 @@ footer{
 
 
 
-@media(max-width: 768px){
+@media screen and(max-width: 768px){
 
     .content h3{
         font-size: 1.2rem;
@@ -357,7 +357,7 @@ footer{
 
 
 
-@media(max-width: 430px){
+@media screen and(max-width: 430px){
     
     .header_top{
         background: url(./images/bg-header-mobile.png)no-repeat center/cover;
