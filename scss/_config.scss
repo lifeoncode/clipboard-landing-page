@@ -1,0 +1,62 @@
+@import url("https://fonts.google.com/specimen/Bai+Jamjuree");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$primary-cyan: hsl(171, 66%, 33%);
+$primary-blue: hsl(233, 11%, 66%);
+$neutral-darkblue: hsl(210, 10%, 33%);
+$neutral-blue: hsl(201, 10%, 66%);
+
+$tiny-font: 11px;
+$small-font: 13px;
+$medium-font: 15px;
+$big-font: 24px;
+$large-font: 32px;
+
+img {
+  width: 100%;
+  display: block;
+}
+
+input,
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+@mixin flexDisplay($dir, $align, $justify) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $align;
+  justify-content: $justify;
+}
+
+@mixin gridDisplay($col, $gap) {
+  display: grid;
+  grid-template-columns: $col;
+  gap: $gap;
+}
+
+@mixin transitionFast {
+  transition: all 0.3s ease;
+}
+
+@mixin transitionMedium {
+  transition: all 0.6s ease;
+}
+
+@mixin transitionSlow {
+  transition: all 1s ease;
+}
